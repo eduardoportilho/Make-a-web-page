@@ -16,16 +16,25 @@ body {
   margin: 15px 30px;
 }
 
-/* On mobile L and smaller, hide the logo */
+/* On mobile L and smaller, center the logo */
 @media (max-width: 425px) {
   .header > .logo {
-    display: none;
+    display: block;
+    position: static;
+    text-align: center;
   }
 }
 
 .header > .title {
   position: static; /* Position the title element normaly, aligned to the right */
   text-align: right;
+}
+
+/* On mobile L and smaller, center the title text */
+@media (max-width: 425px) {
+  .header > .title {
+    text-align: center;
+  }
 }
 
 .header > .title > h1 {
