@@ -25,3 +25,19 @@ div.banner {
   background-image: url("https://cdn.pixabay.com/photo/2017/03/29/12/35/stone-tablet-2185080_1280.jpg");
   height: 350px;
 }
+
+.featured-item {
+    width: 33%;
+    display: inline-block;
+    text-align: center;
+}
+
+.featured-item > .featured-item-img {
+    height: 191px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.featured-item > .featured-item-img > img {
+    width: 100%;
+}
