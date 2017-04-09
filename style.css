@@ -6,19 +6,25 @@ body {
 .header {
   position: relative; /* Allow child elements to be positioned relatively to the parent (https://developer.mozilla.org/en/docs/Web/CSS/position) */
   border-bottom: 2px solid deepskyblue;
-  height: 120px;
+  min-height: 120px;
   margin-bottom: 20px;
 }
 
 .header > .logo {
   position: absolute; /* Position the title element absolutely in relation to it's parent (https://developer.mozilla.org/en/docs/Web/CSS/position) */
-  left: 30px; /* Absolute position: 30px from the left of the parent */
+  left: 0; /* Absolute position: 0 px from the left of the parent */
   margin: 15px 30px;
 }
 
+/* On mobile L and smaller, hide the logo */
+@media (max-width: 425px) {
+  .header > .logo {
+    display: none;
+  }
+}
+
 .header > .title {
-  position: absolute; /* Position the title element absolutely in relation to it's parent */
-  right: 30px; /* Absolute position: 30px from the right of the parent */
+  position: static; /* Position the title element normaly, aligned to the right */
   text-align: right;
 }
 
@@ -50,10 +56,24 @@ body {
   text-align: center;
 }
 
+/* On tablet and smaller, display one item per row */
+@media (max-width: 768px) {
+  .featured-gallery > .featured-item {
+    width: 100%;
+  }
+}
+
 .featured-gallery > .featured-item > .featured-item-img {
   height: 191px;
   overflow: hidden; /* If the image is bigger than the available space, crop the image */
   padding: 20px;
+}
+
+/* On mobile L and smaller, display a smaller image */
+@media (max-width: 425px) {
+  .featured-gallery > .featured-item > .featured-item-img {
+    height: 136px;
+  }
 }
 
 .featured-gallery > .featured-item > .featured-item-img > img {
