@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+div.header {
+    border-bottom: 2px solid lightblue;
+    height: 120px;
+    position: relative;
+}
+
+div.header > div.logo {
+    float: left;
+    margin: 15px 30px;
+}
+
+div.header > div.title {
+    position: fixed;
+    right: 30px;
+    text-align: right;
+}
