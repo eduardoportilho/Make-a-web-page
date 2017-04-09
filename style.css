@@ -1,43 +1,60 @@
 body {
-    margin: 0 20px;
-    font-family: sans-serif;
+  margin: 20px 20px 40px;
+  font-family: sans-serif;
 }
 
-div.header {
-    position: relative;
-    border-bottom: 2px solid lightblue;
-    height: 120px;
-    margin-bottom: 20px;
+.header {
+  position: relative;
+  border-bottom: 2px solid deepskyblue;
+  height: 120px;
+  margin-bottom: 20px;
 }
 
-div.header > div.logo {
-    float: left;
-    margin: 15px 30px;
+.header > .logo {
+  float: left;
+  margin: 15px 30px;
 }
 
-div.header > div.title {
-    position: absolute;
-    right: 30px;
-    text-align: right;
+.header > .title {
+  position: absolute;
+  right: 30px;
+  text-align: right;
 }
 
-div.banner {
+.header > .title > h1 {
+  color: darkslategray;
+}
+
+.header > .title > h2 {
+  color: lightslategray;
+}
+
+.banner {
   background-image: url("https://cdn.pixabay.com/photo/2017/03/29/12/35/stone-tablet-2185080_1280.jpg");
   height: 350px;
 }
 
+.featured-gallery {
+  margin-top: 50px;
+}
+
+.featured-gallery > h1 {
+  color: darkslategray;
+  font-size: 24px;
+}
+
 .featured-item {
-    width: 33%;
-    display: inline-block;
-    text-align: center;
+  width: 33%;
+  display: inline-block;
+  text-align: center;
 }
 
 .featured-item > .featured-item-img {
-    height: 191px;
-    overflow: hidden;
-    padding: 20px;
+  height: 191px;
+  overflow: hidden;
+  padding: 20px;
 }
 
 .featured-item > .featured-item-img > img {
-    width: 100%;
+  width: 100%;
 }
