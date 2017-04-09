@@ -3,14 +3,14 @@ body {
   font-family: Helvetica;
 }
 
-.header {
+.portifolio-header {
   position: relative; /* Allow child elements to be positioned relatively to the parent (https://developer.mozilla.org/en/docs/Web/CSS/position) */
   border-bottom: 2px solid deepskyblue;
   min-height: 120px;
   margin-bottom: 20px;
 }
 
-.header > .logo {
+.portifolio-header > .logo {
   position: absolute; /* Position the title element absolutely in relation to it's parent (https://developer.mozilla.org/en/docs/Web/CSS/position) */
   left: 0; /* Absolute position: 0 px from the left of the parent */
   margin: 15px 30px;
@@ -18,30 +18,30 @@ body {
 
 /* On mobile L and smaller, center the logo */
 @media (max-width: 425px) {
-  .header > .logo {
+  .portifolio-header > .logo {
     display: block;
     position: static;
     text-align: center;
   }
 }
 
-.header > .title {
+.portifolio-header > .title {
   position: static; /* Position the title element normaly, aligned to the right */
   text-align: right;
 }
 
 /* On mobile L and smaller, center the title text */
 @media (max-width: 425px) {
-  .header > .title {
+  .portifolio-header > .title {
     text-align: center;
   }
 }
 
-.header > .title > h1 {
+.portifolio-header > .title > h1 {
   color: darkslategray;
 }
 
-.header > .title > h2 {
+.portifolio-header > .title > h2 {
   color: lightslategray;
 }
 
