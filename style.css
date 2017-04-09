@@ -1,23 +1,24 @@
 body {
   margin: 20px 20px 40px;
-  font-family: sans-serif;
+  font-family: Helvetica;
 }
 
 .header {
-  position: relative;
+  position: relative; /* Allow child elements to be positioned relatively to the parent */
   border-bottom: 2px solid deepskyblue;
   height: 120px;
   margin-bottom: 20px;
 }
 
 .header > .logo {
-  float: left;
+  position: absolute; /* Position the title element absolutely in relation to it's parent */
+  left: 30px; /* Absolute position: 30px from the left of the parent */
   margin: 15px 30px;
 }
 
 .header > .title {
-  position: absolute;
-  right: 30px;
+  position: absolute; /* Position the title element absolutely in relation to it's parent */
+  right: 30px; /* Absolute position: 30px from the right of the parent */
   text-align: right;
 }
 
@@ -43,18 +44,18 @@ body {
   font-size: 24px;
 }
 
-.featured-item {
-  width: 33%;
-  display: inline-block;
+.featured-gallery > .featured-item {
+  width: 33%; /* Split the available space between the 3 items */
+  display: inline-block; /* Display the items in the same row (i.e. don't break the line after each item) */
   text-align: center;
 }
 
-.featured-item > .featured-item-img {
+.featured-gallery > .featured-item > .featured-item-img {
   height: 191px;
-  overflow: hidden;
+  overflow: hidden; /* If the image is bigger than the available space, crop the image */
   padding: 20px;
 }
 
-.featured-item > .featured-item-img > img {
-  width: 100%;
+.featured-gallery > .featured-item > .featured-item-img > img {
+  width: 100%; /* Resize the image to occupy all the width */
 }
