@@ -4,14 +4,14 @@ body {
 }
 
 .header {
-  position: relative; /* Allow child elements to be positioned relatively to the parent */
+  position: relative; /* Allow child elements to be positioned relatively to the parent (https://developer.mozilla.org/en/docs/Web/CSS/position) */
   border-bottom: 2px solid deepskyblue;
   height: 120px;
   margin-bottom: 20px;
 }
 
 .header > .logo {
-  position: absolute; /* Position the title element absolutely in relation to it's parent */
+  position: absolute; /* Position the title element absolutely in relation to it's parent (https://developer.mozilla.org/en/docs/Web/CSS/position) */
   left: 30px; /* Absolute position: 30px from the left of the parent */
   margin: 15px 30px;
 }
@@ -31,7 +31,7 @@ body {
 }
 
 .banner {
-  background-image: url("https://cdn.pixabay.com/photo/2017/03/29/12/35/stone-tablet-2185080_1280.jpg");
+  background-image: url("images/stone-tablet.jpg");
   height: 350px;
 }
 
